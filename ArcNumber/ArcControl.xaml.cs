@@ -24,7 +24,7 @@ namespace ArcNumber
             foreach(var arc in _arcs)
             {
                 arc.Visibility = Visibility.Hidden;                                                                                   
-            }
+            }  
 
             _arcs[num].Visibility = Visibility.Visible;
         }
