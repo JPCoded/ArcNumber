@@ -1,0 +1,234 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ArcNumber"
+             xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="ArcNumber.ArcControl"
+             mc:Ignorable="d" Height="600" Width="700">
+    <Grid Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="700" Height="600">
+        <Path x:Name="arcZero" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M84.990383,0 C113.62286,7.5813944E-08 141.23885,4.352109 167.21291,12.430899 L169.98026,13.329351 140.06934,105.38571 138.43505,104.85512 C121.55189,99.603905 103.6015,96.77504 84.990383,96.77504 66.379268,96.77504 48.428878,99.603905 31.545724,104.85512 L29.917448,105.40607 0,13.329509 2.7678542,12.430899 C28.741924,4.352108 56.357917,4.0434102E-07 84.990383,0 z" Height="105.406" Margin="231.01,23.5,299.01,471.094" Stretch="Fill" Width="169.98" Fill="Lime" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="lblZero" Content="0" HorizontalAlignment="Center" Height="105" Margin="274,10,342,485" VerticalAlignment="Center" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="Red" BorderThickness="0"/>
+        <Path x:Name="arcZero_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M84.990383,0 C113.62286,7.5813944E-08 141.23885,4.352109 167.21291,12.430899 L169.98026,13.329351 140.06934,105.38571 138.43505,104.85512 C121.55189,99.603905 103.6015,96.77504 84.990383,96.77504 66.379268,96.77504 48.428878,99.603905 31.545724,104.85512 L29.917448,105.40607 0,13.329509 2.7678542,12.430899 C28.741924,4.352108 56.357917,4.0434102E-07 84.990383,0 z" Height="105.406" Margin="231.01,23.5,299.01,471.094" Stretch="Fill" Width="169.98" RenderTransformOrigin="0.5,0.5" Opacity="0.5">
+            <Path.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFB4B4B4"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path x:Name="arcOne" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M29.910004,0 L33.05365,1.0179138 C86.416656,19.167885 132.44974,53.172756 165.53989,97.419559 L167.37875,99.940838 89.068207,156.83683 87.990692,155.32159 C66.482086,126.56117 36.560577,104.45801 1.8746033,92.660534 L0,92.053532 z" Height="156.837" Margin="372.029,37.146,160.592,406.017" Stretch="Fill" Width="167.379" RenderTransformOrigin="0.5,0.5" Fill="Lime"/>
+        <Label x:Name="lblOne" Content="1" HorizontalAlignment="Center" Height="105" Margin="413.99,57.293,202.01,437.707" VerticalAlignment="Center" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="Red" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="37"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Path x:Name="arcOne_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M29.910004,0 L33.05365,1.0179138 C86.416656,19.167885 132.44974,53.172756 165.53989,97.419559 L167.37875,99.940838 89.068207,156.83683 87.990692,155.32159 C66.482086,126.56117 36.560577,104.45801 1.8746033,92.660534 L0,92.053532 z" Height="156.837" Margin="372.029,37.146,160.592,406.017" Stretch="Fill" Width="167.379" RenderTransformOrigin="0.5,0.5" Opacity="0.5">
+            <Path.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFB4B4B4"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path x:Name="arcTwo" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M78.324707,0 L81.247162,4.0852127 C111.22742,47.057037 129.31354,98.943314 130.73303,154.97148 L130.81732,161.62907 34.042297,161.62907 33.989655,157.46928 C33.066986,121.05096 21.311005,87.32489 1.823822,59.393188 L0,56.906235 z" Height="161.629" Margin="461.677,137.892,107.506,300.479" Stretch="Fill" Width="130.817" Fill="Lime"/>
+        <Label x:Name="lblTwo" Content="2" HorizontalAlignment="Center" Height="105" Margin="499.656,170.46,116.344,324.54" VerticalAlignment="Center" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="Red" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="70.867"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Path x:Name="arcTwo_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M78.324707,0 L81.247162,4.0852127 C111.22742,47.057037 129.31354,98.943314 130.73303,154.97148 L130.81732,161.62907 34.042297,161.62907 33.989655,157.46928 C33.066986,121.05096 21.311005,87.32489 1.823822,59.393188 L0,56.906235 z" Height="161.629" Margin="461.677,137.892,107.506,300.479" Stretch="Fill" Width="130.817" Opacity="0.5">
+            <Path.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFB4B4B4"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path x:Name="arcThree" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M34.05719,0 L130.83688,0 130.78687,5.0582886 C129.64853,62.572815 110.94885,115.78107 79.829254,159.54156 L78.319977,161.61099 0,104.70816 3.3728638,99.965088 C21.540405,73.073547 32.621155,41.000793 33.935272,6.4265137 z" Height="161.611" Margin="461.658,300.521,107.505,137.868" Stretch="Fill" Width="130.837" Fill="Lime"/>
+        <Label x:Name="lblThree" Content="3" HorizontalAlignment="Center" Height="103.969" Margin="507.723,318.362,122.72,177.669" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="Red" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="110.33"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Path x:Name="arcThree_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M34.05719,0 L130.83688,0 130.78687,5.0582886 C129.64853,62.572815 110.94885,115.78107 79.829254,159.54156 L78.319977,161.61099 0,104.70816 3.3728638,99.965088 C21.540405,73.073547 32.621155,41.000793 33.935272,6.4265137 z" Height="161.611" Margin="461.658,300.521,107.505,137.868" Stretch="Fill" Width="130.837" Opacity="0.5" >
+            <Path.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFB4B4B4"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path x:Name="arcFour" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M89.060791,0 L167.371,56.895691 165.55215,59.389557 C132.46198,103.63629 86.428894,137.64108 33.065887,155.79105 L29.909973,156.81293 0,64.759491 1.8868713,64.148529 C36.572845,52.351074 66.494354,30.247955 88.00296,1.4875793 z" Height="156.813" Margin="372.017,406.045,160.612,37.142" Stretch="Fill" Width="167.371" Fill="Lime"/>
+        <Label x:Name="lblFour" Content="4" HorizontalAlignment="Center" Height="103.969" Margin="428.723,433.362,201.72,62.669" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="Red" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="141.929"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Path x:Name="arcFour_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M89.060791,0 L167.371,56.895691 165.55215,59.389557 C132.46198,103.63629 86.428894,137.64108 33.065887,155.79105 L29.909973,156.81293 0,64.759491 1.8868713,64.148529 C36.572845,52.351074 66.494354,30.247955 88.00296,1.4875793 z" Height="156.813" Margin="372.017,406.045,160.612,37.142" Stretch="Fill" Width="167.371" Opacity="0.5"  >
+            <Path.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFB4B4B4"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path x:Name="arcFive" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M140.03856,0 L169.95598,92.076416 167.20058,92.970947 C141.22646,101.04974 113.61043,105.40186 84.977921,105.40186 56.345413,105.40186 28.729401,101.04974 2.7552948,92.970947 L0,92.076416 29.910919,0.020050049 31.533218,0.54675293 C48.416382,5.7979736 66.366806,8.6268311 84.977921,8.6268311 103.58907,8.6268311 121.53947,5.7979736 138.42265,0.54675293 z" Height="105.402" Margin="231.022,471.098,299.022,23.5" Stretch="Fill" Width="169.956" Fill="Lime"/>
+        <Label x:Name="lblFive" Content="5" HorizontalAlignment="Center" Height="107.718" Margin="281.719,484.113,348.724,8.169" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="Red" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="179.877"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Path x:Name="arcFive_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M140.03856,0 L169.95598,92.076416 167.20058,92.970947 C141.22646,101.04974 113.61043,105.40186 84.977921,105.40186 56.345413,105.40186 28.729401,101.04974 2.7552948,92.970947 L0,92.076416 29.910919,0.020050049 31.533218,0.54675293 C48.416382,5.7979736 66.366806,8.6268311 84.977921,8.6268311 103.58907,8.6268311 121.53947,5.7979736 138.42265,0.54675293 z" Height="105.402" Margin="231.022,471.098,299.022,23.5" Stretch="Fill" Width="169.956" Opacity="0.5"  >
+            <Path.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFB4B4B4"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path x:Name="arcSix" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M78.31863,0 L80.849346,3.4212341 C101.41917,30.167725 129.34755,50.961029 161.60562,62.772278 L167.39277,64.730438 137.47152,156.8186 134.71949,155.92511 C83.528011,138.60193 39.059856,106.69513 6.2600288,65.149658 L0,56.901794 z" Height="156.819" Margin="92.599,406.047,440.008,37.134" Stretch="Fill" Width="167.393" Fill="Lime"/>
+        <Label x:Name="lblSix" Content="6" HorizontalAlignment="Center" Height="107.718" Margin="144.219,436.113,486.224,56.169" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="Red" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="217.266"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Path x:Name="arcSix_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M78.31863,0 L80.849346,3.4212341 C101.41917,30.167725 129.34755,50.961029 161.60562,62.772278 L167.39277,64.730438 137.47152,156.8186 134.71949,155.92511 C83.528011,138.60193 39.059856,106.69513 6.2600288,65.149658 L0,56.901794 z" Height="156.819" Margin="92.599,406.047,440.008,37.134" Stretch="Fill" Width="167.393" Opacity="0.5"  >
+            <Path.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFB4B4B4"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path x:Name="arcSeven" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M0,0 L96.779791,0 96.901724,6.4266968 C98.215841,41.001007 109.29657,73.073792 127.46414,99.965332 L130.83756,104.70917 52.517534,161.612 51.007669,159.54181 C19.888071,115.78128 1.1883561,62.573029 0.050016937,5.0584717 z" Height="161.612" Margin="39.505,300.521,529.657,137.867" Stretch="Fill" Width="130.838" Fill="Lime"/>
+        <Label x:Name="lblSeven" Content="7" HorizontalAlignment="Center" Height="107.718" Margin="60.219,318.613,570.224,173.669" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="Red" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="246.058"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Path x:Name="arcSeven_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M0,0 L96.779791,0 96.901724,6.4266968 C98.215841,41.001007 109.29657,73.073792 127.46414,99.965332 L130.83756,104.70917 52.517534,161.612 51.007669,159.54181 C19.888071,115.78128 1.1883561,62.573029 0.050016937,5.0584717 z" Height="161.612" Margin="39.505,300.521,529.657,137.867" Stretch="Fill" Width="130.838" Opacity="0.5"  >
+            <Path.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFB4B4B4"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path x:Name="arcEight" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M52.491978,0 L130.8167,56.906242 128.99347,59.392418 C109.50631,87.324104 97.75032,121.05018 96.827644,157.46848 L96.775024,161.62827 0,161.62827 0.084238194,154.97068 C1.503729,98.942497 19.589869,47.056221 49.570126,4.0843964 z" Height="161.628" Margin="39.506,137.893,529.677,300.479" Stretch="Fill" Width="130.817" Fill="Lime"/>
+        <Label x:Name="lblEight" Content="8" HorizontalAlignment="Center" Height="107.718" Margin="55.849,171.308,568.517,320.974" VerticalAlignment="Center" Width="75.634" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="Red" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="289.285"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Path x:Name="arcEight_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M52.491978,0 L130.8167,56.906242 128.99347,59.392418 C109.50631,87.324104 97.75032,121.05018 96.827644,157.46848 L96.775024,161.62827 0,161.62827 0.084238194,154.97068 C1.503729,98.942497 19.589869,47.056221 49.570126,4.0843964 z" Height="161.628" Margin="39.506,137.893,529.677,300.479" Stretch="Fill" Width="130.817" Opacity="0.5"  >
+            <Path.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFB4B4B4"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path x:Name="arcNine" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M137.47963,0 L167.39056,92.056396 165.77831,92.579842 C132.50383,103.83991 103.5995,124.57935 82.279617,151.58389 L78.299744,156.82753 0,99.939438 6.2802048,91.664993 C39.080048,50.119553 83.548233,18.212725 134.73972,0.88953835 z" Height="156.828" Margin="92.579,37.138,440.031,406.034" Stretch="Fill" Width="167.39" Fill="Lime"/>
+        <Label x:Name="lblNine" Content="9" HorizontalAlignment="Center" Height="107.718" Margin="140.719,54.113,489.724,438.169" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="Red" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="321.474"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Path x:Name="arcNine_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M137.47963,0 L167.39056,92.056396 165.77831,92.579842 C132.50383,103.83991 103.5995,124.57935 82.279617,151.58389 L78.299744,156.82753 0,99.939438 6.2802048,91.664993 C39.080048,50.119553 83.548233,18.212725 134.73972,0.88953835 z" Height="156.828" Margin="92.579,37.138,440.031,406.034" Stretch="Fill" Width="167.39" Opacity="0.5"  >
+            <Path.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFB4B4B4"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+        </Path>
+        <ed:Arc ArcThickness="97" EndAngle="360" HorizontalAlignment="Center" Height="553" Margin="39.5,23.5,107.506,23.5" Stretch="None" StrokeThickness="0" StartAngle="0" VerticalAlignment="Center" Width="553" Opacity="0.5">
+            <ed:Arc.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF646464" Offset="0.8"/>
+                    <GradientStop Color="#FF979797" Offset="1"/>
+                    <GradientStop Color="#FF979797" Offset="0.6"/>
+                </RadialGradientBrush>
+            </ed:Arc.Fill>
+        </ed:Arc>
+        <Path x:Name="OuterArc" HorizontalAlignment="Center" Height="553" StrokeThickness="0" VerticalAlignment="Center" Width="553" Margin="39.5,23.5,107.5,23.5" Data="M326.05453,452.8681 L324.60019,453.36017 C309.40533,458.08627 293.24997,460.63226 276.49994,460.63226 259.74994,460.63226 243.59454,458.08627 228.3997,453.36017 L226.93964,452.88614 200.01981,535.737 202.49957,536.54205 C225.87627,543.81299 250.73068,547.72992 276.49994,547.72992 302.2692,547.72992 327.12363,543.81299 350.50034,536.54205 L352.98019,535.737 z M131.95551,390.38794 L61.468651,441.5997 67.102676,449.0228 C96.622566,486.41382 136.64397,515.13 182.71635,530.72089 L185.19318,531.52502 212.12234,448.64548 206.91389,446.88315 C177.88161,436.25299 152.74602,417.53897 134.23315,393.46707 z M421.04025,390.38565 L420.08823,391.72446 C400.73047,417.60883 373.80112,437.50165 342.58374,448.11935 L340.88556,448.66922 367.80453,531.51733 370.64484,530.59766 C418.67154,514.2627 460.10132,483.65836 489.88248,443.83627 L491.51944,441.5918 z M6.5469022,285.10159 L6.5919194,289.65424 C7.6164241,341.41733 24.446224,389.30475 52.453957,428.68924 L53.812836,430.5524 124.3011,379.33984 121.26501,375.0704 C104.91415,350.86801 94.94146,322.0025 93.758751,290.88562 L93.64901,285.10159 z M459.35135,285.10156 L459.24161,290.88541 C458.05893,322.00226 448.08624,350.86774 431.73544,375.07013 L428.69986,379.3389 499.1879,430.55145 500.54623,428.68896 C528.55389,389.3045 545.38361,341.41708 546.40814,289.65402 L546.45313,285.10156 z M53.789742,122.4744 L51.160065,126.15035 C24.177773,164.82494 7.9002094,211.52251 6.622664,261.94778 L6.5468531,267.93961 93.644577,267.93961 93.691933,264.1958 C94.522339,231.41939 105.10276,201.06596 122.64124,175.92749 L124.28215,173.68993 z M499.2099,122.47345 L428.71786,173.68904 430.35928,175.92729 C447.89771,201.06581 458.47806,231.41927 459.30847,264.19574 L459.35583,267.93954 546.45313,267.93954 546.37726,261.94772 C545.09973,211.52238 528.82227,164.82477 501.84012,126.15014 z M276.5,96.775002 C177.24062,96.774994 96.774994,177.24063 96.774994,276.5 96.774994,375.7594 177.24062,456.22501 276.5,456.22501 375.7594,456.22501 456.22501,375.75937 456.22501,276.5 456.22501,177.2406 375.7594,96.774994 276.5,96.775002 z M367.81699,21.487854 L340.89795,104.33612 342.58508,104.88242 C373.80252,115.50017 400.7319,135.39304 420.08969,161.27744 L421.05945,162.64116 491.53903,111.43471 489.88406,109.16555 C460.10291,69.343384 418.67307,38.738968 370.64627,22.403975 z M185.17975,21.479399 L182.71384,22.279989 C136.64166,37.870903 96.620422,66.587135 67.100662,103.97814 L61.448502,111.42516 131.91803,162.6246 135.49991,157.9053 C154.68773,133.60115 180.70154,114.9356 210.64848,104.80151 L212.0995,104.33041 z M276.49994,5.2693033 C250.73073,5.2693 225.87634,9.1862049 202.49968,16.457125 L200.009,17.265766 226.9288,100.11666 228.39978,99.639107 C243.5946,94.913002 259.74997,92.367012 276.49994,92.367012 293.24994,92.367012 309.40527,94.912994 324.6001,99.639084 L326.0712,100.1167 352.991,17.265799 350.50018,16.457134 C327.12354,9.186204 302.26917,5.269299 276.49994,5.2693033 z M276.5,0 C429.20673,0 553,123.79327 553,276.5 553,429.20676 429.20673,553 276.5,553 123.79326,553 0,429.20673 0,276.5 0,123.79324 123.79326,0 276.5,0 z" Stretch="Fill">
+            <Path.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF646464" Offset="0.8"/>
+                    <GradientStop Color="#FF979797" Offset="1"/>
+                    <GradientStop Color="#FF979797" Offset="0.6"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path x:Name="eliHexPattern" HorizontalAlignment="Center" Height="553" StrokeThickness="0" VerticalAlignment="Center" Data="M327.05453,452.8681 L353.98019,535.737 351.50034,536.54205 C328.12363,543.81298 303.2692,547.72992 277.49994,547.72992 251.73068,547.72992 226.87627,543.81298 203.49957,536.54205 L201.01981,535.737 227.93964,452.88614 229.3997,453.36016 C244.59454,458.08627 260.74994,460.63226 277.49994,460.63226 294.24997,460.63226 310.40533,458.08627 325.60019,453.36016 z M132.95551,390.38794 L135.23315,393.46707 C153.74602,417.53897 178.88161,436.25299 207.91389,446.88314 L213.12234,448.64547 186.19318,531.52502 183.71635,530.72088 C137.64397,515.13 97.622566,486.41381 68.102676,449.02279 L62.468647,441.5997 z M422.04025,390.38565 L492.51944,441.59179 490.88248,443.83627 C461.10132,483.65835 419.67154,514.26269 371.64484,530.59765 L368.80453,531.51733 341.88556,448.66922 343.58374,448.11935 C374.80112,437.50164 401.73047,417.60882 421.08823,391.72445 z M7.5469022,285.10159 L94.64901,285.10159 94.758751,290.88562 C95.94146,322.0025 105.91415,350.86801 122.26501,375.0704 L125.3011,379.33984 54.812836,430.5524 53.453957,428.68924 C25.446224,389.30474 8.6164246,341.41732 7.591918,289.65423 z M460.35135,285.10156 L547.45313,285.10156 547.40814,289.65402 C546.38361,341.41708 529.55389,389.3045 501.54623,428.68896 L500.1879,430.55145 429.69986,379.33889 432.73544,375.07013 C449.08624,350.86773 459.05893,322.00225 460.24161,290.8854 z M54.789745,122.4744 L125.28215,173.68992 123.64124,175.92749 C106.10276,201.06596 95.522339,231.41938 94.691933,264.1958 L94.644569,267.9396 7.5468526,267.9396 7.6226606,261.94778 C8.9002094,211.5225 25.177773,164.82493 52.160061,126.15035 z M500.2099,122.47345 L502.84012,126.15013 C529.82227,164.82476 546.09973,211.52238 547.37726,261.94772 L547.45313,267.93954 460.35583,267.93954 460.30847,264.19574 C459.47806,231.41926 448.89771,201.06581 431.35928,175.92729 L429.71786,173.68904 z M277.5,96.774998 C376.7594,96.77499 457.22501,177.2406 457.22501,276.5 457.22501,375.75937 376.7594,456.225 277.5,456.225 178.24062,456.225 97.774994,375.7594 97.774994,276.5 97.774994,177.24063 178.24062,96.77499 277.5,96.774998 z M368.81699,21.487854 L371.64627,22.403971 C419.67307,38.738964 461.10291,69.34338 490.88406,109.16555 L492.53903,111.4347 422.05945,162.64116 421.08969,161.27743 C401.7319,135.39303 374.80252,115.50016 343.58508,104.88242 L341.89795,104.33611 z M186.17975,21.479391 L213.0995,104.3304 211.64848,104.80151 C181.70154,114.9356 155.68773,133.60115 136.49991,157.9053 L132.91803,162.6246 62.448505,111.42516 68.100662,103.97814 C97.620422,66.587132 137.64166,37.870899 183.71384,22.279986 z M277.49994,5.2692969 C303.26917,5.2692955 328.12354,9.1862004 351.50018,16.457133 L353.991,17.265791 327.0712,100.1167 325.6001,99.63908 C310.40527,94.912991 294.24994,92.367008 277.49994,92.367008 260.74997,92.367008 244.5946,94.912998 229.39978,99.639103 L227.9288,100.11666 201.009,17.265759 203.49968,16.457125 C226.87634,9.1862013 251.73073,5.2692964 277.49994,5.2692969 z M276.5,0 L277,0.0063268822 270.3634,0.090304106 C120.95494,3.8755941 1,126.17928 0.99999893,276.5 1,426.82068 120.95494,549.12439 270.3634,552.90966 L277,552.99365 276.5,553 C123.79327,553 0,429.20672 0,276.5 0,123.79326 123.79327,-3.5762787E-06 276.5,0 z" Margin="38.5,23.5,114.047,23.5" Stretch="Fill" Width="547.453" Opacity="0.75">
+            <Path.Fill>
+                <ImageBrush ImageSource="hex2.png"/>
+            </Path.Fill>
+        </Path>
+        <Ellipse x:Name="eliCircle" HorizontalAlignment="Center" Height="360" Margin="136,120,204,120" VerticalAlignment="Center" Width="360">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFFF2727" Offset="0.509"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Rectangle HorizontalAlignment="Left" Height="553" Margin="315.5,23.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="1" Fill="#FF00FFF3" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="18"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+    </Grid>
+</UserControl>
