@@ -8,17 +8,17 @@
              mc:Ignorable="d" Height="600" Width="700">
     <Grid Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="700" Height="600">
         <Path x:Name="arcZero" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M84.990383,0 C113.62286,7.5813944E-08 141.23885,4.352109 167.21291,12.430899 L169.98026,13.329351 140.06934,105.38571 138.43505,104.85512 C121.55189,99.603905 103.6015,96.77504 84.990383,96.77504 66.379268,96.77504 48.428878,99.603905 31.545724,104.85512 L29.917448,105.40607 0,13.329509 2.7678542,12.430899 C28.741924,4.352108 56.357917,4.0434102E-07 84.990383,0 z" Height="105.406" Margin="231.01,23.5,299.01,471.094" Stretch="Fill" Width="169.98" Fill="{DynamicResource ArcColor}" RenderTransformOrigin="0.5,0.5"/>
-        <Label x:Name="lblZero" Content="0" HorizontalAlignment="Center" Height="105" Margin="274.833,15,341.167,480" VerticalAlignment="Center" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" BorderThickness="0" Padding="{DynamicResource Padding}"/>
-        <Path x:Name="arcZero_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M84.990383,0 C113.62286,7.5813944E-08 141.23885,4.352109 167.21291,12.430899 L169.98026,13.329351 140.06934,105.38571 138.43505,104.85512 C121.55189,99.603905 103.6015,96.77504 84.990383,96.77504 66.379268,96.77504 48.428878,99.603905 31.545724,104.85512 L29.917448,105.40607 0,13.329509 2.7678542,12.430899 C28.741924,4.352108 56.357917,4.0434102E-07 84.990383,0 z" Height="105.406" Margin="231.01,23.5,299.01,471.094" Stretch="Fill" Width="169.98" RenderTransformOrigin="0.5,0.5" Opacity="0.5" d:IsHidden="True">
+        <Label x:Name="lblZero" Content="0" HorizontalAlignment="Center" Height="105" Margin="274.833,15,341.167,480" VerticalAlignment="Center" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" BorderThickness="0" Padding="{DynamicResource Padding}" UseLayoutRounding="{DynamicResource LayoutRounding}"/>
+        <Path x:Name="arcZero_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M84.990383,0 C113.62286,7.5813944E-08 141.23885,4.352109 167.21291,12.430899 L169.98026,13.329351 140.06934,105.38571 138.43505,104.85512 C121.55189,99.603905 103.6015,96.77504 84.990383,96.77504 66.379268,96.77504 48.428878,99.603905 31.545724,104.85512 L29.917448,105.40607 0,13.329509 2.7678542,12.430899 C28.741924,4.352108 56.357917,4.0434102E-07 84.990383,0 z" Height="105.406" Margin="231.01,23.5,299.01,471.094" Stretch="Fill" Width="169.98" RenderTransformOrigin="0.5,0.5" Opacity="0.5">
             <Path.Fill>
                 <RadialGradientBrush>
-                    <GradientStop Color="#FFB4B4B4"/>
                     <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFB4B4B4"/>
                 </RadialGradientBrush>
             </Path.Fill>
         </Path>
         <Path x:Name="arcOne" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M29.910004,0 L33.05365,1.0179138 C86.416656,19.167885 132.44974,53.172756 165.53989,97.419559 L167.37875,99.940838 89.068207,156.83683 87.990692,155.32159 C66.482086,126.56117 36.560577,104.45801 1.8746033,92.660534 L0,92.053532 z" Height="156.837" Margin="372.029,37.146,160.592,406.017" Stretch="Fill" Width="167.379" RenderTransformOrigin="0.5,0.5" Fill="{DynamicResource ArcColor}"/>
-        <Label x:Name="lblOne" Content="1" HorizontalAlignment="Center" Height="105" Margin="409.49,60.293,206.51,434.707" VerticalAlignment="Center" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}">
+        <Label x:Name="lblOne" Content="1" HorizontalAlignment="Center" Height="105" Margin="409.49,60.293,206.51,434.707" VerticalAlignment="Center" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}" UseLayoutRounding="{DynamicResource LayoutRounding}">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -28,18 +28,11 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Path x:Name="arcOne_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M29.910004,0 L33.05365,1.0179138 C86.416656,19.167885 132.44974,53.172756 165.53989,97.419559 L167.37875,99.940838 89.068207,156.83683 87.990692,155.32159 C66.482086,126.56117 36.560577,104.45801 1.8746033,92.660534 L0,92.053532 z" Height="156.837" Margin="372.029,37.146,160.592,406.017" Stretch="Fill" Width="167.379" RenderTransformOrigin="0.5,0.5" Opacity="0.5" d:IsHidden="True">
-            <Path.Fill>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFB4B4B4"/>
-                    <GradientStop Color="Black" Offset="1"/>
-                </RadialGradientBrush>
-            </Path.Fill>
-        </Path>
+        <Path x:Name="arcOne_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M29.910004,0 L33.05365,1.0179138 C86.416656,19.167885 132.44974,53.172756 165.53989,97.419559 L167.37875,99.940838 89.068207,156.83683 87.990692,155.32159 C66.482086,126.56117 36.560577,104.45801 1.8746033,92.660534 L0,92.053532 z" Height="156.837" Margin="372.029,37.146,160.592,406.017" Stretch="Fill" Width="167.379" RenderTransformOrigin="0.5,0.5" Opacity="0.5" Fill="{DynamicResource ArcGlass}"/>
         <Path x:Name="arcTwo" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M78.324707,0 L81.247162,4.0852127 C111.22742,47.057037 129.31354,98.943314 130.73303,154.97148 L130.81732,161.62907 34.042297,161.62907 33.989655,157.46928 C33.066986,121.05096 21.311005,87.32489 1.823822,59.393188 L0,56.906235 z" Height="161.629" Margin="461.677,137.892,107.506,300.479" Stretch="Fill" Width="130.817" Fill="{DynamicResource ArcColor}"/>
 
-     
-        <Label x:Name="lblTwo" Content="2" HorizontalAlignment="Center" Height="104.152" Margin="496.253,171.765,119.747,324.083" VerticalAlignment="Center" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}">
+
+        <Label x:Name="lblTwo" Content="2" HorizontalAlignment="Center" Height="104.152" Margin="496.253,171.765,119.747,324.083" VerticalAlignment="Center" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}" UseLayoutRounding="{DynamicResource LayoutRounding}">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -49,16 +42,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Path x:Name="arcTwo_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M78.324707,0 L81.247162,4.0852127 C111.22742,47.057037 129.31354,98.943314 130.73303,154.97148 L130.81732,161.62907 34.042297,161.62907 33.989655,157.46928 C33.066986,121.05096 21.311005,87.32489 1.823822,59.393188 L0,56.906235 z" Height="161.629" Margin="461.677,137.892,107.506,300.479" Stretch="Fill" Width="130.817" Opacity="0.5" d:IsHidden="True">
-            <Path.Fill>
-                <RadialGradientBrush>
-                    <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="#FFB4B4B4"/>
-                </RadialGradientBrush>
-            </Path.Fill>
-        </Path>
+        <Path x:Name="arcTwo_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M78.324707,0 L81.247162,4.0852127 C111.22742,47.057037 129.31354,98.943314 130.73303,154.97148 L130.81732,161.62907 34.042297,161.62907 33.989655,157.46928 C33.066986,121.05096 21.311005,87.32489 1.823822,59.393188 L0,56.906235 z" Height="161.629" Margin="461.677,137.892,107.506,300.479" Stretch="Fill" Width="130.817" Opacity="0.5" Fill="{DynamicResource ArcGlass}"/>
         <Path x:Name="arcThree" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M34.05719,0 L130.83688,0 130.78687,5.0582886 C129.64853,62.572815 110.94885,115.78107 79.829254,159.54156 L78.319977,161.61099 0,104.70816 3.3728638,99.965088 C21.540405,73.073547 32.621155,41.000793 33.935272,6.4265137 z" Height="161.611" Margin="461.658,300.521,107.505,137.868" Stretch="Fill" Width="130.837" Fill="{DynamicResource ArcColor}"/>
-        <Label x:Name="lblThree" Content="3" HorizontalAlignment="Center" Height="103.969" Margin="503.223,318.862,127.22,177.169" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}">
+        <Label x:Name="lblThree" Content="3" HorizontalAlignment="Center" Height="103.969" Margin="503.223,318.862,127.22,177.169" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}" UseLayoutRounding="{DynamicResource LayoutRounding}">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -68,16 +54,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Path x:Name="arcThree_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M34.05719,0 L130.83688,0 130.78687,5.0582886 C129.64853,62.572815 110.94885,115.78107 79.829254,159.54156 L78.319977,161.61099 0,104.70816 3.3728638,99.965088 C21.540405,73.073547 32.621155,41.000793 33.935272,6.4265137 z" Height="161.611" Margin="461.658,300.521,107.505,137.868" Stretch="Fill" Width="130.837" Opacity="0.5" d:IsHidden="True" >
-            <Path.Fill>
-                <RadialGradientBrush>
-                    <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="#FFB4B4B4"/>
-                </RadialGradientBrush>
-            </Path.Fill>
-        </Path>
+        <Path x:Name="arcThree_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M34.05719,0 L130.83688,0 130.78687,5.0582886 C129.64853,62.572815 110.94885,115.78107 79.829254,159.54156 L78.319977,161.61099 0,104.70816 3.3728638,99.965088 C21.540405,73.073547 32.621155,41.000793 33.935272,6.4265137 z" Height="161.611" Margin="461.658,300.521,107.505,137.868" Stretch="Fill" Width="130.837" Opacity="0.5" Fill="{DynamicResource ArcGlass}" />
         <Path x:Name="arcFour" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M89.060791,0 L167.371,56.895691 165.55215,59.389557 C132.46198,103.63629 86.428894,137.64108 33.065887,155.79105 L29.909973,156.81293 0,64.759491 1.8868713,64.148529 C36.572845,52.351074 66.494354,30.247955 88.00296,1.4875793 z" Height="156.813" Margin="372.017,406.045,160.612,37.142" Stretch="Fill" Width="167.371" Fill="{DynamicResource ArcColor}"/>
-        <Label x:Name="lblFour" Content="4" HorizontalAlignment="Center" Height="103.969" Margin="427.473,430.862,202.97,65.169" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}">
+        <Label x:Name="lblFour" Content="4" HorizontalAlignment="Center" Height="103.969" Margin="427.473,430.862,202.97,65.169" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}" UseLayoutRounding="{DynamicResource LayoutRounding}">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -87,16 +66,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Path x:Name="arcFour_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M89.060791,0 L167.371,56.895691 165.55215,59.389557 C132.46198,103.63629 86.428894,137.64108 33.065887,155.79105 L29.909973,156.81293 0,64.759491 1.8868713,64.148529 C36.572845,52.351074 66.494354,30.247955 88.00296,1.4875793 z" Height="156.813" Margin="372.017,406.045,160.612,37.142" Stretch="Fill" Width="167.371" Opacity="0.5" d:IsHidden="True"  >
-            <Path.Fill>
-                <RadialGradientBrush>
-                    <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="#FFB4B4B4"/>
-                </RadialGradientBrush>
-            </Path.Fill>
-        </Path>
+        <Path x:Name="arcFour_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M89.060791,0 L167.371,56.895691 165.55215,59.389557 C132.46198,103.63629 86.428894,137.64108 33.065887,155.79105 L29.909973,156.81293 0,64.759491 1.8868713,64.148529 C36.572845,52.351074 66.494354,30.247955 88.00296,1.4875793 z" Height="156.813" Margin="372.017,406.045,160.612,37.142" Stretch="Fill" Width="167.371" Opacity="0.5" Fill="{DynamicResource ArcGlass}"  />
         <Path x:Name="arcFive" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M140.03856,0 L169.95598,92.076416 167.20058,92.970947 C141.22646,101.04974 113.61043,105.40186 84.977921,105.40186 56.345413,105.40186 28.729401,101.04974 2.7552948,92.970947 L0,92.076416 29.910919,0.020050049 31.533218,0.54675293 C48.416382,5.7979736 66.366806,8.6268311 84.977921,8.6268311 103.58907,8.6268311 121.53947,5.7979736 138.42265,0.54675293 z" Height="105.402" Margin="231.022,471.098,299.022,23.5" Stretch="Fill" Width="169.956" Fill="{DynamicResource ArcColor}"/>
-        <Label x:Name="lblFive" Content="5" HorizontalAlignment="Center" Height="107.718" Margin="281.219,478.113,349.224,14.169" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}">
+        <Label x:Name="lblFive" Content="5" HorizontalAlignment="Center" Height="107.718" Margin="281.219,478.113,349.224,14.169" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}" UseLayoutRounding="{DynamicResource LayoutRounding}">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -106,16 +78,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Path x:Name="arcFive_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M140.03856,0 L169.95598,92.076416 167.20058,92.970947 C141.22646,101.04974 113.61043,105.40186 84.977921,105.40186 56.345413,105.40186 28.729401,101.04974 2.7552948,92.970947 L0,92.076416 29.910919,0.020050049 31.533218,0.54675293 C48.416382,5.7979736 66.366806,8.6268311 84.977921,8.6268311 103.58907,8.6268311 121.53947,5.7979736 138.42265,0.54675293 z" Height="105.402" Margin="231.022,471.098,299.022,23.5" Stretch="Fill" Width="169.956" Opacity="0.5" d:IsHidden="True"  >
-            <Path.Fill>
-                <RadialGradientBrush>
-                    <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="#FFB4B4B4"/>
-                </RadialGradientBrush>
-            </Path.Fill>
-        </Path>
+        <Path x:Name="arcFive_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M140.03856,0 L169.95598,92.076416 167.20058,92.970947 C141.22646,101.04974 113.61043,105.40186 84.977921,105.40186 56.345413,105.40186 28.729401,101.04974 2.7552948,92.970947 L0,92.076416 29.910919,0.020050049 31.533218,0.54675293 C48.416382,5.7979736 66.366806,8.6268311 84.977921,8.6268311 103.58907,8.6268311 121.53947,5.7979736 138.42265,0.54675293 z" Height="105.402" Margin="231.022,471.098,299.022,23.5" Stretch="Fill" Width="169.956" Opacity="0.5" Fill="{DynamicResource ArcGlass}"  />
         <Path x:Name="arcSix" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M78.31863,0 L80.849346,3.4212341 C101.41917,30.167725 129.34755,50.961029 161.60562,62.772278 L167.39277,64.730438 137.47152,156.8186 134.71949,155.92511 C83.528011,138.60193 39.059856,106.69513 6.2600288,65.149658 L0,56.901794 z" Height="156.819" Margin="92.599,406.047,440.008,37.134" Stretch="Fill" Width="167.393" Fill="{DynamicResource ArcColor}"/>
-        <Label x:Name="lblSix" Content="6" HorizontalAlignment="Center" Height="107.718" Margin="146.469,432.613,483.974,59.669" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}">
+        <Label x:Name="lblSix" Content="6" HorizontalAlignment="Center" Height="107.718" Margin="146.469,432.613,483.974,59.669" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}" UseLayoutRounding="{DynamicResource LayoutRounding}">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -125,16 +90,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Path x:Name="arcSix_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M78.31863,0 L80.849346,3.4212341 C101.41917,30.167725 129.34755,50.961029 161.60562,62.772278 L167.39277,64.730438 137.47152,156.8186 134.71949,155.92511 C83.528011,138.60193 39.059856,106.69513 6.2600288,65.149658 L0,56.901794 z" Height="156.819" Margin="92.599,406.047,440.008,37.134" Stretch="Fill" Width="167.393" Opacity="0.5" d:IsHidden="True"  >
-            <Path.Fill>
-                <RadialGradientBrush>
-                    <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="#FFB4B4B4"/>
-                </RadialGradientBrush>
-            </Path.Fill>
-        </Path>
+        <Path x:Name="arcSix_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M78.31863,0 L80.849346,3.4212341 C101.41917,30.167725 129.34755,50.961029 161.60562,62.772278 L167.39277,64.730438 137.47152,156.8186 134.71949,155.92511 C83.528011,138.60193 39.059856,106.69513 6.2600288,65.149658 L0,56.901794 z" Height="156.819" Margin="92.599,406.047,440.008,37.134" Stretch="Fill" Width="167.393" Opacity="0.5" Fill="{DynamicResource ArcGlass}"  />
         <Path x:Name="arcSeven" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M0,0 L96.779791,0 96.901724,6.4266968 C98.215841,41.001007 109.29657,73.073792 127.46414,99.965332 L130.83756,104.70917 52.517534,161.612 51.007669,159.54181 C19.888071,115.78128 1.1883561,62.573029 0.050016937,5.0584717 z" Height="161.612" Margin="39.505,300.521,529.657,137.867" Stretch="Fill" Width="130.838" Fill="{DynamicResource ArcColor}"/>
-        <Label x:Name="lblSeven" Content="7" HorizontalAlignment="Center" Height="107.718" Margin="63.719,316.363,566.724,175.919" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}">
+        <Label x:Name="lblSeven" Content="7" HorizontalAlignment="Center" Height="107.718" Margin="63.719,316.363,566.724,175.919" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}" UseLayoutRounding="{DynamicResource LayoutRounding}">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -144,16 +102,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Path x:Name="arcSeven_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M0,0 L96.779791,0 96.901724,6.4266968 C98.215841,41.001007 109.29657,73.073792 127.46414,99.965332 L130.83756,104.70917 52.517534,161.612 51.007669,159.54181 C19.888071,115.78128 1.1883561,62.573029 0.050016937,5.0584717 z" Height="161.612" Margin="39.505,300.521,529.657,137.867" Stretch="Fill" Width="130.838" Opacity="0.5" d:IsHidden="True"  >
-            <Path.Fill>
-                <RadialGradientBrush>
-                    <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="#FFB4B4B4"/>
-                </RadialGradientBrush>
-            </Path.Fill>
-        </Path>
+        <Path x:Name="arcSeven_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M0,0 L96.779791,0 96.901724,6.4266968 C98.215841,41.001007 109.29657,73.073792 127.46414,99.965332 L130.83756,104.70917 52.517534,161.612 51.007669,159.54181 C19.888071,115.78128 1.1883561,62.573029 0.050016937,5.0584717 z" Height="161.612" Margin="39.505,300.521,529.657,137.867" Stretch="Fill" Width="130.838" Opacity="0.5" Fill="{DynamicResource ArcGlass}"  />
         <Path x:Name="arcEight" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M52.491978,0 L130.8167,56.906242 128.99347,59.392418 C109.50631,87.324104 97.75032,121.05018 96.827644,157.46848 L96.775024,161.62827 0,161.62827 0.084238194,154.97068 C1.503729,98.942497 19.589869,47.056221 49.570126,4.0843964 z" Height="161.628" Margin="39.506,137.893,529.677,300.479" Stretch="Fill" Width="130.817" Fill="{DynamicResource ArcColor}"/>
-        <Label x:Name="lblEight" Content="8" Margin="56.211,176.888,568.155,328.661" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="{DynamicResource Padding}" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Label x:Name="lblEight" Content="8" Margin="56.211,176.888,568.155,328.661" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="{DynamicResource Padding}" HorizontalAlignment="Center" VerticalAlignment="Center" UseLayoutRounding="{DynamicResource LayoutRounding}">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -163,16 +114,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Path x:Name="arcEight_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M52.491978,0 L130.8167,56.906242 128.99347,59.392418 C109.50631,87.324104 97.75032,121.05018 96.827644,157.46848 L96.775024,161.62827 0,161.62827 0.084238194,154.97068 C1.503729,98.942497 19.589869,47.056221 49.570126,4.0843964 z" Height="161.628" Margin="39.506,137.893,529.677,300.479" Stretch="Fill" Width="130.817" Opacity="0.5" d:IsHidden="True"  >
-            <Path.Fill>
-                <RadialGradientBrush>
-                    <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="#FFB4B4B4"/>
-                </RadialGradientBrush>
-            </Path.Fill>
-        </Path>
+        <Path x:Name="arcEight_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M52.491978,0 L130.8167,56.906242 128.99347,59.392418 C109.50631,87.324104 97.75032,121.05018 96.827644,157.46848 L96.775024,161.62827 0,161.62827 0.084238194,154.97068 C1.503729,98.942497 19.589869,47.056221 49.570126,4.0843964 z" Height="161.628" Margin="39.506,137.893,529.677,300.479" Stretch="Fill" Width="130.817" Opacity="0.5" Fill="{DynamicResource ArcGlass}"  />
         <Path x:Name="arcNine" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M137.47963,0 L167.39056,92.056396 165.77831,92.579842 C132.50383,103.83991 103.5995,124.57935 82.279617,151.58389 L78.299744,156.82753 0,99.939438 6.2802048,91.664993 C39.080048,50.119553 83.548233,18.212725 134.73972,0.88953835 z" Height="156.828" Margin="92.579,37.138,440.031,406.034" Stretch="Fill" Width="167.39" Fill="{DynamicResource ArcColor}"/>
-        <Label x:Name="lblNine" Content="9" HorizontalAlignment="Center" Height="107.718" Margin="145.219,59.613,485.224,432.669" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}">
+        <Label x:Name="lblNine" Content="9" HorizontalAlignment="Center" Height="107.718" Margin="145.219,59.613,485.224,432.669" VerticalAlignment="Center" Width="69.557" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}" UseLayoutRounding="{DynamicResource LayoutRounding}" BorderThickness="0">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -182,15 +126,8 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Path x:Name="arcNine_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M137.47963,0 L167.39056,92.056396 165.77831,92.579842 C132.50383,103.83991 103.5995,124.57935 82.279617,151.58389 L78.299744,156.82753 0,99.939438 6.2802048,91.664993 C39.080048,50.119553 83.548233,18.212725 134.73972,0.88953835 z" Height="156.828" Margin="92.579,37.138,440.031,406.034" Stretch="Fill" Width="167.39" Opacity="0.5" d:IsHidden="True"  >
-            <Path.Fill>
-                <RadialGradientBrush>
-                    <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="#FFB4B4B4"/>
-                </RadialGradientBrush>
-            </Path.Fill>
-        </Path>
-        <ed:Arc ArcThickness="97" EndAngle="360" HorizontalAlignment="Center" Height="553" Margin="39.5,23.5,107.506,23.5" Stretch="None" StrokeThickness="0" StartAngle="0" VerticalAlignment="Center" Width="553" Opacity="0.5" d:IsHidden="True">
+        <Path x:Name="arcNine_Glass" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M137.47963,0 L167.39056,92.056396 165.77831,92.579842 C132.50383,103.83991 103.5995,124.57935 82.279617,151.58389 L78.299744,156.82753 0,99.939438 6.2802048,91.664993 C39.080048,50.119553 83.548233,18.212725 134.73972,0.88953835 z" Height="156.828" Margin="92.579,37.138,440.031,406.034" Stretch="Fill" Width="167.39" Opacity="0.5" Fill="{DynamicResource ArcGlass}"  />
+        <ed:Arc ArcThickness="97" EndAngle="360" HorizontalAlignment="Center" Height="553" Margin="39.5,23.5,107.506,23.5" Stretch="None" StrokeThickness="0" StartAngle="0" VerticalAlignment="Center" Width="553" Opacity="0.5">
             <ed:Arc.Fill>
                 <RadialGradientBrush>
                     <GradientStop Color="#FF646464" Offset="0.8"/>
@@ -208,7 +145,7 @@
                 </RadialGradientBrush>
             </Path.Fill>
         </Path>
-        <Path x:Name="eliHexPattern" HorizontalAlignment="Center" Height="553" StrokeThickness="0" VerticalAlignment="Center" Data="M327.05453,452.8681 L353.98019,535.737 351.50034,536.54205 C328.12363,543.81298 303.2692,547.72992 277.49994,547.72992 251.73068,547.72992 226.87627,543.81298 203.49957,536.54205 L201.01981,535.737 227.93964,452.88614 229.3997,453.36016 C244.59454,458.08627 260.74994,460.63226 277.49994,460.63226 294.24997,460.63226 310.40533,458.08627 325.60019,453.36016 z M132.95551,390.38794 L135.23315,393.46707 C153.74602,417.53897 178.88161,436.25299 207.91389,446.88314 L213.12234,448.64547 186.19318,531.52502 183.71635,530.72088 C137.64397,515.13 97.622566,486.41381 68.102676,449.02279 L62.468647,441.5997 z M422.04025,390.38565 L492.51944,441.59179 490.88248,443.83627 C461.10132,483.65835 419.67154,514.26269 371.64484,530.59765 L368.80453,531.51733 341.88556,448.66922 343.58374,448.11935 C374.80112,437.50164 401.73047,417.60882 421.08823,391.72445 z M7.5469022,285.10159 L94.64901,285.10159 94.758751,290.88562 C95.94146,322.0025 105.91415,350.86801 122.26501,375.0704 L125.3011,379.33984 54.812836,430.5524 53.453957,428.68924 C25.446224,389.30474 8.6164246,341.41732 7.591918,289.65423 z M460.35135,285.10156 L547.45313,285.10156 547.40814,289.65402 C546.38361,341.41708 529.55389,389.3045 501.54623,428.68896 L500.1879,430.55145 429.69986,379.33889 432.73544,375.07013 C449.08624,350.86773 459.05893,322.00225 460.24161,290.8854 z M54.789745,122.4744 L125.28215,173.68992 123.64124,175.92749 C106.10276,201.06596 95.522339,231.41938 94.691933,264.1958 L94.644569,267.9396 7.5468526,267.9396 7.6226606,261.94778 C8.9002094,211.5225 25.177773,164.82493 52.160061,126.15035 z M500.2099,122.47345 L502.84012,126.15013 C529.82227,164.82476 546.09973,211.52238 547.37726,261.94772 L547.45313,267.93954 460.35583,267.93954 460.30847,264.19574 C459.47806,231.41926 448.89771,201.06581 431.35928,175.92729 L429.71786,173.68904 z M277.5,96.774998 C376.7594,96.77499 457.22501,177.2406 457.22501,276.5 457.22501,375.75937 376.7594,456.225 277.5,456.225 178.24062,456.225 97.774994,375.7594 97.774994,276.5 97.774994,177.24063 178.24062,96.77499 277.5,96.774998 z M368.81699,21.487854 L371.64627,22.403971 C419.67307,38.738964 461.10291,69.34338 490.88406,109.16555 L492.53903,111.4347 422.05945,162.64116 421.08969,161.27743 C401.7319,135.39303 374.80252,115.50016 343.58508,104.88242 L341.89795,104.33611 z M186.17975,21.479391 L213.0995,104.3304 211.64848,104.80151 C181.70154,114.9356 155.68773,133.60115 136.49991,157.9053 L132.91803,162.6246 62.448505,111.42516 68.100662,103.97814 C97.620422,66.587132 137.64166,37.870899 183.71384,22.279986 z M277.49994,5.2692969 C303.26917,5.2692955 328.12354,9.1862004 351.50018,16.457133 L353.991,17.265791 327.0712,100.1167 325.6001,99.63908 C310.40527,94.912991 294.24994,92.367008 277.49994,92.367008 260.74997,92.367008 244.5946,94.912998 229.39978,99.639103 L227.9288,100.11666 201.009,17.265759 203.49968,16.457125 C226.87634,9.1862013 251.73073,5.2692964 277.49994,5.2692969 z M276.5,0 L277,0.0063268822 270.3634,0.090304106 C120.95494,3.8755941 1,126.17928 0.99999893,276.5 1,426.82068 120.95494,549.12439 270.3634,552.90966 L277,552.99365 276.5,553 C123.79327,553 0,429.20672 0,276.5 0,123.79326 123.79327,-3.5762787E-06 276.5,0 z" Margin="38.5,23.5,114.047,23.5" Stretch="Fill" Width="547.453" Opacity="0.75" d:IsHidden="True">
+        <Path x:Name="eliHexPattern" HorizontalAlignment="Center" Height="553" StrokeThickness="0" VerticalAlignment="Center" Data="M327.05453,452.8681 L353.98019,535.737 351.50034,536.54205 C328.12363,543.81298 303.2692,547.72992 277.49994,547.72992 251.73068,547.72992 226.87627,543.81298 203.49957,536.54205 L201.01981,535.737 227.93964,452.88614 229.3997,453.36016 C244.59454,458.08627 260.74994,460.63226 277.49994,460.63226 294.24997,460.63226 310.40533,458.08627 325.60019,453.36016 z M132.95551,390.38794 L135.23315,393.46707 C153.74602,417.53897 178.88161,436.25299 207.91389,446.88314 L213.12234,448.64547 186.19318,531.52502 183.71635,530.72088 C137.64397,515.13 97.622566,486.41381 68.102676,449.02279 L62.468647,441.5997 z M422.04025,390.38565 L492.51944,441.59179 490.88248,443.83627 C461.10132,483.65835 419.67154,514.26269 371.64484,530.59765 L368.80453,531.51733 341.88556,448.66922 343.58374,448.11935 C374.80112,437.50164 401.73047,417.60882 421.08823,391.72445 z M7.5469022,285.10159 L94.64901,285.10159 94.758751,290.88562 C95.94146,322.0025 105.91415,350.86801 122.26501,375.0704 L125.3011,379.33984 54.812836,430.5524 53.453957,428.68924 C25.446224,389.30474 8.6164246,341.41732 7.591918,289.65423 z M460.35135,285.10156 L547.45313,285.10156 547.40814,289.65402 C546.38361,341.41708 529.55389,389.3045 501.54623,428.68896 L500.1879,430.55145 429.69986,379.33889 432.73544,375.07013 C449.08624,350.86773 459.05893,322.00225 460.24161,290.8854 z M54.789745,122.4744 L125.28215,173.68992 123.64124,175.92749 C106.10276,201.06596 95.522339,231.41938 94.691933,264.1958 L94.644569,267.9396 7.5468526,267.9396 7.6226606,261.94778 C8.9002094,211.5225 25.177773,164.82493 52.160061,126.15035 z M500.2099,122.47345 L502.84012,126.15013 C529.82227,164.82476 546.09973,211.52238 547.37726,261.94772 L547.45313,267.93954 460.35583,267.93954 460.30847,264.19574 C459.47806,231.41926 448.89771,201.06581 431.35928,175.92729 L429.71786,173.68904 z M277.5,96.774998 C376.7594,96.77499 457.22501,177.2406 457.22501,276.5 457.22501,375.75937 376.7594,456.225 277.5,456.225 178.24062,456.225 97.774994,375.7594 97.774994,276.5 97.774994,177.24063 178.24062,96.77499 277.5,96.774998 z M368.81699,21.487854 L371.64627,22.403971 C419.67307,38.738964 461.10291,69.34338 490.88406,109.16555 L492.53903,111.4347 422.05945,162.64116 421.08969,161.27743 C401.7319,135.39303 374.80252,115.50016 343.58508,104.88242 L341.89795,104.33611 z M186.17975,21.479391 L213.0995,104.3304 211.64848,104.80151 C181.70154,114.9356 155.68773,133.60115 136.49991,157.9053 L132.91803,162.6246 62.448505,111.42516 68.100662,103.97814 C97.620422,66.587132 137.64166,37.870899 183.71384,22.279986 z M277.49994,5.2692969 C303.26917,5.2692955 328.12354,9.1862004 351.50018,16.457133 L353.991,17.265791 327.0712,100.1167 325.6001,99.63908 C310.40527,94.912991 294.24994,92.367008 277.49994,92.367008 260.74997,92.367008 244.5946,94.912998 229.39978,99.639103 L227.9288,100.11666 201.009,17.265759 203.49968,16.457125 C226.87634,9.1862013 251.73073,5.2692964 277.49994,5.2692969 z M276.5,0 L277,0.0063268822 270.3634,0.090304106 C120.95494,3.8755941 1,126.17928 0.99999893,276.5 1,426.82068 120.95494,549.12439 270.3634,552.90966 L277,552.99365 276.5,553 C123.79327,553 0,429.20672 0,276.5 0,123.79326 123.79327,-3.5762787E-06 276.5,0 z" Margin="38.5,23.5,114.047,23.5" Stretch="Fill" Width="547.453" Opacity="0.8">
             <Path.Fill>
                 <ImageBrush ImageSource="hex2.png"/>
             </Path.Fill>
@@ -216,12 +153,12 @@
         <Ellipse x:Name="eliMidCircle" HorizontalAlignment="Center" Height="360" Margin="136,120,204,120" VerticalAlignment="Center" Width="360">
             <Ellipse.Fill>
                 <RadialGradientBrush>
-                    <GradientStop Color="#FFFF2727" Offset="0.509"/>
+                    <GradientStop Color="#FFFF2727" Offset="0.5"/>
                     <GradientStop Color="Black" Offset="1"/>
                 </RadialGradientBrush>
             </Ellipse.Fill>
         </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="391.833,44,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <Ellipse x:Name="Bolt1_A" HorizontalAlignment="Left" Height="10" Margin="391.833,44,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -234,124 +171,7 @@
                 <ImageBrush ImageSource="Screwhead.png"/>
             </Ellipse.Fill>
         </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="525.333,138.875,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="33.943"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="Screwhead.png"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="575.458,295.25,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="93.209"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="Screwhead.png"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="525.333,451.667,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="102.887"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="Screwhead.png"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="392.083,547,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="170.279"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="Screwhead.png"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="228.583,546.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="40.529"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="Screwhead.png"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="97.25,451.167,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="63.814"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="Screwhead.png"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="47.333,294.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="78.652"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="Screwhead.png"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="228.833,44.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="147.441"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="Screwhead.png"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="96.833,139.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="134.299"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="Screwhead.png"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="369.416,115.501,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <Ellipse x:Name="Bolt1_B" HorizontalAlignment="Left" Height="10" Margin="369.416,115.501,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -364,7 +184,20 @@
                 <ImageBrush ImageSource="Screwhead.png"/>
             </Ellipse.Fill>
         </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="463.833,182.875,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <Ellipse x:Name="Bolt2_A" HorizontalAlignment="Left" Height="10" Margin="525.333,138.875,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="33.943"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Screwhead.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="Bolt2_B" HorizontalAlignment="Left" Height="10" Margin="463.833,182.875,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -377,7 +210,20 @@
                 <ImageBrush ImageSource="Screwhead.png"/>
             </Ellipse.Fill>
         </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="500.958,295.75,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <Ellipse x:Name="Bolt3_A" HorizontalAlignment="Left" Height="10" Margin="575.458,295.25,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="93.209"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Screwhead.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="Bolt3_B" HorizontalAlignment="Left" Height="10" Margin="500.958,295.75,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -390,7 +236,20 @@
                 <ImageBrush ImageSource="Screwhead.png"/>
             </Ellipse.Fill>
         </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="464.583,407.667,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <Ellipse x:Name="Bolt4_A" HorizontalAlignment="Left" Height="10" Margin="525.333,451.667,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="102.887"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Screwhead.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="Bolt4_B" HorizontalAlignment="Left" Height="10" Margin="464.583,407.667,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -403,7 +262,20 @@
                 <ImageBrush ImageSource="Screwhead.png"/>
             </Ellipse.Fill>
         </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="369.583,476,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <Ellipse x:Name="Bolt5_A" HorizontalAlignment="Left" Height="10" Margin="392.083,547,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="170.279"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Screwhead.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="Bolt5_B" HorizontalAlignment="Left" Height="10" Margin="369.583,476,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -416,7 +288,20 @@
                 <ImageBrush ImageSource="Screwhead.png"/>
             </Ellipse.Fill>
         </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="252.25,474.667,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <Ellipse x:Name="Bolt6_A" HorizontalAlignment="Left" Height="10" Margin="228.583,546.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="40.529"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Screwhead.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="Bolt6_B" HorizontalAlignment="Left" Height="10" Margin="252.25,474.667,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -429,7 +314,20 @@
                 <ImageBrush ImageSource="Screwhead.png"/>
             </Ellipse.Fill>
         </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="158.562,406.667,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <Ellipse x:Name="Bolt7_A" HorizontalAlignment="Left" Height="10" Margin="97.25,451.167,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="63.814"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Screwhead.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="Bolt7_B" HorizontalAlignment="Left" Height="10" Margin="158.562,406.667,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -442,7 +340,20 @@
                 <ImageBrush ImageSource="Screwhead.png"/>
             </Ellipse.Fill>
         </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="120.666,294.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <Ellipse x:Name="Bolt8_A" HorizontalAlignment="Left" Height="10" Margin="47.333,294.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="78.652"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Screwhead.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="Bolt8_B" HorizontalAlignment="Left" Height="10" Margin="120.666,294.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -455,7 +366,20 @@
                 <ImageBrush ImageSource="Screwhead.png"/>
             </Ellipse.Fill>
         </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="157.333,183,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <Ellipse x:Name="Bolt9_A" HorizontalAlignment="Left" Height="10" Margin="96.833,139.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="134.299"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Screwhead.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="Bolt9_B" HorizontalAlignment="Left" Height="10" Margin="157.333,183,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -468,7 +392,20 @@
                 <ImageBrush ImageSource="Screwhead.png"/>
             </Ellipse.Fill>
         </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="10" Margin="251.5,114.833,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <Ellipse x:Name="Bolt0_A" HorizontalAlignment="Left" Height="10" Margin="228.833,44.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="147.441"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Screwhead.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="Bolt0_B" HorizontalAlignment="Left" Height="10" Margin="251.5,114.833,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
