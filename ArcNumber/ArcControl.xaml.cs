@@ -20,7 +20,6 @@ namespace ArcNumber
         {
             InitializeComponent();
 
-           
             _arcs = new List<Path> { arcZero,arcOne,arcTwo,arcThree,arcFour,arcFive,arcSix,arcSeven,arcEight,arcNine };
             _numbers = new List<Label> { lblZero, lblOne, lblTwo, lblThree, lblFour, lblFive, lblSix, lblSeven, lblEight, lblNine };
             foreach (var num in _numbers)

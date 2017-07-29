@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ArcNumber" xmlns:System="clr-namespace:System;assembly=mscorlib">
+    <BitmapImage x:Key="boltImage" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="D:\CWarlord87\Documents\Projects\ArcNumber\ArcNumber\Screwhead.png"/>
+
+    <System:Double x:Key="boltWidth">10</System:Double>
+    <System:Double x:Key="BoltHeight">10</System:Double>
+
+</ResourceDictionary>

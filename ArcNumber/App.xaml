@@ -9,6 +9,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="NixieResources.xaml"/>
                 <ResourceDictionary Source="ArcResources.xaml"/>
+                <ResourceDictionary Source="BoltDictonary.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
 
