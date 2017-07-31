@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -14,39 +16,64 @@ namespace ArcNumber
         int _arcNum = 0;
         private readonly List<Path> _arcs;
         private readonly List<Label> _numbers;
+        Random rnd = new Random();
         
 
         public ArcControl()
         {
+           
             InitializeComponent();
 
             _arcs = new List<Path> { arcZero,arcOne,arcTwo,arcThree,arcFour,arcFive,arcSix,arcSeven,arcEight,arcNine };
             _numbers = new List<Label> { lblZero, lblOne, lblTwo, lblThree, lblFour, lblFive, lblSix, lblSeven, lblEight, lblNine };
             foreach (var num in _numbers)
             {
-                num.Foreground = Brushes.Gray;
+               
+                num.Foreground = (Brush)Application.Current.FindResource("NixieColorOff");
             }
             foreach (var arc in _arcs)
             {
                 arc.Visibility = Visibility.Hidden;                                                                                   
-            }  
+            }
+            AsyncUpdateNumbersBackground();
         }
+
+        private async Task AsyncUpdateNumbersBackground()
+        {
+            while (true)
+            {
+                // do the work in the loop
+                string newData = DateTime.Now.ToLongTimeString();
+
+                // update the UI
+                var newNumbers = "";
+                for (var i = 0; i < 1536; i++)
+                {
+                    newNumbers += rnd.Next(0, 2);
+                }
+                 txtNumbers.Text = newNumbers;
+
+                // don't run again for at least 200 milliseconds
+                await Task.Delay(2000);
+            }
+        }
+
 
         public void SetArc(int num)
         {
                _arcs[num].Visibility = Visibility.Visible;
-            _numbers[num].Foreground = Brushes.Red;
+            _numbers[num].Foreground = (Brush)Application.Current.FindResource("NixieColor"); 
         }
 
         public void IncreaseArc()
         {
             _arcs[_arcNum].Visibility = Visibility.Hidden;
-            _numbers[_arcNum].Foreground = Brushes.Gray;
+            _numbers[_arcNum].Foreground = (Brush)Application.Current.FindResource("NixieColorOff");
 
             _arcNum = (_arcNum + 1 > 9) ? 0 : _arcNum + 1;
      
 
-            _numbers[_arcNum].Foreground = Brushes.Red;
+            _numbers[_arcNum].Foreground = (Brush)Application.Current.FindResource("NixieColor");
             _arcs[_arcNum].Visibility = Visibility.Visible;
             
         }

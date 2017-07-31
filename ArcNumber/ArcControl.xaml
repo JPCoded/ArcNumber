@@ -7,21 +7,21 @@
              xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="ArcNumber.ArcControl"
              mc:Ignorable="d" Height="600" Width="700">
 
-    <Grid Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="700" Height="600">
-      
-        <ContentControl/>
+    <Grid Margin="0,-0.25,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="700" Height="600">
         <Grid Margin="136,120,204,120">
-            <TextBlock x:Name="txtNumbers" HorizontalAlignment="Left" Height="360" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Foreground="White" Cursor="None"><Run Text="                              11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"/><Run Text="1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 111111111111111111111111111111111111111"/></TextBlock>
-            <Ellipse x:Name="eliMidCircle" HorizontalAlignment="Center" Height="360" VerticalAlignment="Center" Width="360" Opacity="0.9">
-                <Ellipse.Fill>
-                    <RadialGradientBrush>
-                        <GradientStop Color="#FFFF2727" Offset="0.5"/>
-                        <GradientStop Color="Black" Offset="1"/>
-                    </RadialGradientBrush>
-                </Ellipse.Fill>
-            </Ellipse>
+            <Grid>
+                <TextBlock x:Name="txtNumbers" HorizontalAlignment="Left" Height="360" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Foreground="White" Cursor="None" TextTrimming="CharacterEllipsis" TextOptions.TextFormattingMode="Display" Text="111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111" FontFamily="Lucida Console" TextDecorations="{x:Null}" RenderTransformOrigin="0.5,0.5"/>
+                <Ellipse x:Name="eliMidCircle" HorizontalAlignment="Center" Height="360" VerticalAlignment="Center" Width="360" Opacity="0.8">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="#FFFF2828" Offset="0.25"/>
+                            <GradientStop Color="Black" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Grid>
         </Grid>
-        <ed:Arc ArcThickness="97" EndAngle="360" HorizontalAlignment="Center" Height="553" Margin="39.5,23.5,107.506,23.5" Stretch="None" StrokeThickness="0" StartAngle="0" VerticalAlignment="Center" Width="553" Opacity="0.5">
+        <ed:Arc ArcThickness="97" EndAngle="360" HorizontalAlignment="Center" Height="553" Margin="39.5,23.5,107.506,23.5" Stretch="None" StrokeThickness="0" StartAngle="0" VerticalAlignment="Center" Width="553">
             <ed:Arc.Fill>
                 <RadialGradientBrush>
                     <GradientStop Color="#FF646464" Offset="0.8"/>
@@ -44,7 +44,7 @@
         </Grid>
         <Grid x:Name="gridArcOne" Margin="372.029,37.146,160.592,406.017">
             <Path x:Name="arcOne" HorizontalAlignment="Center" StrokeThickness="0" VerticalAlignment="Center" Data="M29.910004,0 L33.05365,1.0179138 C86.416656,19.167885 132.44974,53.172756 165.53989,97.419559 L167.37875,99.940838 89.068207,156.83683 87.990692,155.32159 C66.482086,126.56117 36.560577,104.45801 1.8746033,92.660534 L0,92.053532 z" Height="156.837" Stretch="Fill" Width="167.379" RenderTransformOrigin="0.5,0.5" Fill="{DynamicResource ArcColor}" d:IsHidden="True"/>
-            <Label x:Name="lblOne" Content="1" HorizontalAlignment="Center" Height="105" Margin="37.461,23.147,45.918,28.69" VerticalAlignment="Center" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" Foreground="{DynamicResource NixieColor}" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}" UseLayoutRounding="{DynamicResource LayoutRounding}">
+            <Label x:Name="lblOne" Content="1" HorizontalAlignment="Center" Height="105" Margin="37.461,23.147,45.918,28.69" VerticalAlignment="Center" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Nixie One" FontSize="100" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Padding="{DynamicResource Padding}" UseLayoutRounding="{DynamicResource LayoutRounding}" Foreground="{DynamicResource NixieColor}">
                 <Label.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -184,242 +184,8 @@
                 <ImageBrush ImageSource="hex2.png"/>
             </Path.Fill>
         </Path>
-        <Grid x:Name="gridBolts" Margin="47.333,44,114.542,43">
-            <Ellipse x:Name="Bolt1_A" HorizontalAlignment="Left" Height="{DynamicResource BoltHeight}" Margin="344.5,0,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="{DynamicResource boltWidth}" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="35.884"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="{DynamicResource boltImage}"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt1_B" HorizontalAlignment="Left" Height="10" Margin="322.083,71.501,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-18"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt2_A" HorizontalAlignment="Left" Height="10" Margin="478,94.875,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="34"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt2_B" HorizontalAlignment="Left" Height="10" Margin="416.5,138.875,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="70"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt3_A" HorizontalAlignment="Left" Height="10" Margin="528.125,251.25,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="93"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt3_B" HorizontalAlignment="Left" Height="10" Margin="453.625,251.75,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="59"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt4_A" HorizontalAlignment="Left" Height="10" Margin="478,407.667,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="103"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt4_B" HorizontalAlignment="Left" Height="10" Margin="417.25,363.667,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt5_A" HorizontalAlignment="Left" Height="10" Margin="344.75,503,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="170"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt5_B" HorizontalAlignment="Left" Height="10" Margin="322.25,432,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="148"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt6_A" HorizontalAlignment="Left" Height="10" Margin="181.25,502.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="41"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt6_B" HorizontalAlignment="Left" Height="10" Margin="204.917,430.667,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-11"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt7_A" HorizontalAlignment="Left" Height="10" Margin="49.917,407.167,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="64"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt7_B" HorizontalAlignment="Left" Height="10" Margin="111.229,362.667,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="33"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt8_A" HorizontalAlignment="Left" Height="10" Margin="0,250.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="79"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt8_B" HorizontalAlignment="Left" Height="10" Margin="73.333,250.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="73"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt9_A" HorizontalAlignment="Left" Height="10" Margin="49.5,95.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="134"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt9_B" HorizontalAlignment="Left" Height="10" Margin="110,139,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="104.408"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="Screwhead.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="Bolt0_A" HorizontalAlignment="Left" Height="10" Margin="181.5,0.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <Grid x:Name="gridBolts_0" Margin="229.105,43.668,438.228,475.999">
+            <Ellipse x:Name="Bolt0_A" HorizontalAlignment="Left" Height="10" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
                 <Ellipse.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -432,7 +198,7 @@
                     <ImageBrush ImageSource="Screwhead.png"/>
                 </Ellipse.Fill>
             </Ellipse>
-            <Ellipse x:Name="Bolt0_B" HorizontalAlignment="Left" Height="10" Margin="204.167,70.833,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+            <Ellipse x:Name="Bolt0_B" HorizontalAlignment="Left" Height="10" Margin="22.667,70.333,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
                 <Ellipse.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -446,6 +212,258 @@
                 </Ellipse.Fill>
             </Ellipse>
 
+        </Grid>
+        <Grid x:Name="gridBolts_1" Margin="372.017,42.5,295.566,475.999">
+            <Ellipse x:Name="Bolt1_A" HorizontalAlignment="Left" Height="{DynamicResource BoltHeight}" Margin="22.417,0,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="{DynamicResource boltWidth}" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="35.884"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="{DynamicResource boltImage}"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Bolt1_B" HorizontalAlignment="Left" Height="10" Margin="0,71.501,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-18"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
+        <Grid x:Name="gridBolts_2" Margin="463.638,139.142,164.862,406.858">
+            <Ellipse x:Name="Bolt2_A" HorizontalAlignment="Left" Height="10" Margin="61.5,0,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="34"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Bolt2_B" HorizontalAlignment="Left" Height="10" Margin="0,44,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="70"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
+        <Grid x:Name="gridBolts_3" Margin="501,295.5,114.5,294">
+            <Ellipse x:Name="Bolt3_A" HorizontalAlignment="Left" Height="10" Margin="74.5,0,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="93"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Bolt3_B" HorizontalAlignment="Left" Height="10" Margin="0,0.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="59"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
+        <Grid x:Name="gridBolts_4" Margin="464,407.383,165.25,138.617">
+            <Ellipse x:Name="Bolt4_A" HorizontalAlignment="Left" Height="10" Margin="60.75,44,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="103"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Bolt4_B" HorizontalAlignment="Left" Height="10" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
+        <Grid x:Name="gridBolts_5" Margin="370.017,474.75,297.483,44.25">
+            <Ellipse x:Name="Bolt5_A" HorizontalAlignment="Left" Height="10" Margin="22.5,71,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="170"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Bolt5_B" HorizontalAlignment="Left" Height="10" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="148"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
+        <Grid x:Name="gridBolts_6" Margin="229.105,473.917,437.228,44.25">
+            <Ellipse x:Name="Bolt6_A" HorizontalAlignment="Left" Height="10" Margin="0,71.833,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="41"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Bolt6_B" HorizontalAlignment="Left" Height="10" Margin="23.667,0,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
+        <Grid x:Name="gridBolts_7" Margin="95.688,407.633,533,137.867">
+            <Ellipse x:Name="Bolt7_A" HorizontalAlignment="Left" Height="10" Margin="0,44.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="64"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Bolt7_B" HorizontalAlignment="Left" Height="10" Margin="61.312,0,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="33"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
+        <Grid x:Name="gridBolts_8" Margin="47.667,295.5,569,294.5">
+            <Ellipse x:Name="Bolt8_A" HorizontalAlignment="Left" Height="10" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="79"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Bolt8_B" HorizontalAlignment="Left" Height="10" Margin="73.333,0,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="73"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
+        <Grid x:Name="gridBolts_9" Margin="96.5,139.393,533,407.107">
+            <Ellipse x:Name="Bolt9_A" HorizontalAlignment="Left" Height="10" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="134"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="Bolt9_B" HorizontalAlignment="Left" Height="10" Margin="60.5,43.5,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="104.408"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Screwhead.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
         </Grid>
 
     </Grid>
