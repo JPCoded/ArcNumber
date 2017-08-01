@@ -29,7 +29,7 @@ namespace ArcNumber
             foreach (var num in _numbers)
             {
                
-                num.Foreground = (Brush)Application.Current.FindResource("NixieColorOff");
+                num.Foreground = (Brush)Application.Current.FindResource("nixieColorOff");
             }
             foreach (var arc in _arcs)
             {
@@ -60,18 +60,18 @@ namespace ArcNumber
         public void SetArc(int num)
         {
                _arcs[num].Visibility = Visibility.Visible;
-            _numbers[num].Foreground = (Brush)Application.Current.FindResource("NixieColor"); 
+            _numbers[num].Foreground = (Brush)Application.Current.FindResource("nixieColor"); 
         }
 
         public void IncreaseArc()
         {
             _arcs[_arcNum].Visibility = Visibility.Hidden;
-            _numbers[_arcNum].Foreground = (Brush)Application.Current.FindResource("NixieColorOff");
+            _numbers[_arcNum].Foreground = (Brush)Application.Current.FindResource("nixieColorOff");
 
             _arcNum = (_arcNum + 1 > 9) ? 0 : _arcNum + 1;
      
 
-            _numbers[_arcNum].Foreground = (Brush)Application.Current.FindResource("NixieColor");
+            _numbers[_arcNum].Foreground = (Brush)Application.Current.FindResource("nixieColor");
             _arcs[_arcNum].Visibility = Visibility.Visible;
             
         }
