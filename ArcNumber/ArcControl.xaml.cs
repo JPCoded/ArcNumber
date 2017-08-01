@@ -38,7 +38,7 @@ namespace ArcNumber
             AsyncUpdateNumbersBackground();
         }
 
-        private async Task AsyncUpdateNumbersBackground()
+        private async void AsyncUpdateNumbersBackground()
         {
             while (true)
             {
