@@ -26,15 +26,13 @@ namespace ArcNumber
 
             _arcs = new List<Path> { arcZero,arcOne,arcTwo,arcThree,arcFour,arcFive,arcSix,arcSeven,arcEight,arcNine };
             _numbers = new List<Label> { lblZero, lblOne, lblTwo, lblThree, lblFour, lblFive, lblSix, lblSeven, lblEight, lblNine };
-            foreach (var num in _numbers)
+
+            for (var i = 0; i < 10; i++)
             {
-               
-                num.Foreground = (Brush)Application.Current.FindResource("nixieColorOff");
+                ArcOff(i);
             }
-            foreach (var arc in _arcs)
-            {
-                arc.Visibility = Visibility.Hidden;                                                                                   
-            }
+
+
             AsyncUpdateNumbersBackground();
         }
 
@@ -56,23 +54,32 @@ namespace ArcNumber
             }
         }
 
-
-        public void SetArc(int num)
+        private void ArcOff(int num)
         {
-               _arcs[num].Visibility = Visibility.Visible;
-            _numbers[num].Foreground = (Brush)Application.Current.FindResource("nixieColor"); 
+            _arcs[num].Visibility = Visibility.Hidden;
+            _numbers[num].Foreground = (Brush)Application.Current.FindResource("nixieColorOff");
+        }
+
+        private void ArcOn(int num)
+        {
+            _arcs[num].Visibility = Visibility.Visible;
+            _numbers[num].Foreground = (Brush)Application.Current.FindResource("nixieColor");
+           
+        }
+
+        internal void SetArc(int num)
+        {
+              ArcOn(num);
         }
 
         public void IncreaseArc()
         {
-            _arcs[_arcNum].Visibility = Visibility.Hidden;
-            _numbers[_arcNum].Foreground = (Brush)Application.Current.FindResource("nixieColorOff");
+            ArcOff(_arcNum);
 
             _arcNum = (_arcNum + 1 > 9) ? 0 : _arcNum + 1;
      
 
-            _numbers[_arcNum].Foreground = (Brush)Application.Current.FindResource("nixieColor");
-            _arcs[_arcNum].Visibility = Visibility.Visible;
+       ArcOn(_arcNum);
             
         }
     }
