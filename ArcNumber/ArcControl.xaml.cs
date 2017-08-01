@@ -13,10 +13,10 @@ namespace ArcNumber
     /// </summary>
     public partial class ArcControl : UserControl
     {
-        int _arcNum = 0;
+        private int _arcNum = 0;
         private readonly List<Path> _arcs;
         private readonly List<Label> _numbers;
-        Random rnd = new Random();
+        private readonly Random _rnd = new Random();
         
 
         public ArcControl()
@@ -42,19 +42,17 @@ namespace ArcNumber
         {
             while (true)
             {
-                // do the work in the loop
-                string newData = DateTime.Now.ToLongTimeString();
-
-                // update the UI
+            // update the UI
                 var newNumbers = "";
                 for (var i = 0; i < 1536; i++)
                 {
-                    newNumbers += rnd.Next(0, 2);
+                    var rndNum = _rnd.Next(0, 3);
+                    newNumbers += (rndNum == 2) ? " " : rndNum.ToString();
                 }
                  txtNumbers.Text = newNumbers;
 
                 // don't run again for at least 200 milliseconds
-                await Task.Delay(2000);
+                await Task.Delay(1000);
             }
         }
 
