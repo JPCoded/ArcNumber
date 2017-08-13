@@ -22,7 +22,7 @@
         <Rectangle x:Name="recLiquid" HorizontalAlignment="Left" Height="195.464" Margin="10,47.597,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="68.208">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="White" Offset="0.95"/>
+                    <GradientStop Color="White" Offset="1"/>
                     <GradientStop Color="Lime" Offset="1"/>
                 </LinearGradientBrush>
             </Rectangle.Fill>
@@ -34,5 +34,5 @@
         </Rectangle>
 
     </Grid>
-    
+
 </UserControl>
