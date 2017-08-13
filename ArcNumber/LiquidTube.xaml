@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="ArcNumber.LiquidTube"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ArcNumber"
+             mc:Ignorable="d" Height="304.513" Width="89.786">
+    <Grid>
+
+        <Path x:Name="recBackTube" HorizontalAlignment="Left" Margin="-0.231,7.155,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="88.67" Data="M65.000001,0 C98.654847,0 126.33576,7.1502838 129.66441,16.313124 L129.68598,16.380997 130,16.380997 130,18.171 130,264.552 130,266.38101 129.67227,266.38101 129.66441,266.40988 C126.33576,275.57269 98.654847,282.72299 65.000001,282.72299 31.345149,282.72299 3.6642382,275.57269 0.33558706,266.40988 L0.32773507,266.38101 0,266.38101 0,264.552 0,18.171 0,16.380997 0.3140254,16.380997 0.33558706,16.313124 C3.6642382,7.1502838 31.345149,0 65.000001,0 z" Height="276.31" Stretch="Fill">
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF818181" Offset="1"/>
+                    <GradientStop Color="#FF818181"/>
+                    <GradientStop Color="#FFC8C8C8" Offset="0.5"/>
+                    <GradientStop Color="#FFC8C8C8" Offset="0.25"/>
+                    <GradientStop Color="#FFC8C8C8" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+
+        <Rectangle x:Name="recLiquid" HorizontalAlignment="Left" Height="195.464" Margin="10,47.597,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="68.208">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0.95"/>
+                    <GradientStop Color="Lime" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="recGlass" HorizontalAlignment="Left" Height="195.464" Margin="10,47.597,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="68.208" Opacity="0.6">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="glassTube.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+    </Grid>
+    
+</UserControl>

@@ -64,6 +64,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="LiquidTube.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -74,6 +78,9 @@
     </Compile>
     <Compile Include="ArcControl.xaml.cs">
       <DependentUpon>ArcControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LiquidTube.xaml.cs">
+      <DependentUpon>LiquidTube.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -124,6 +131,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Screwhead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="metal circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="glassTube.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

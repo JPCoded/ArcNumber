@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,7 +24,7 @@ namespace ArcNumber
         {
            
             InitializeComponent();
-
+            
             _arcs = new List<Path> { arcZero,arcOne,arcTwo,arcThree,arcFour,arcFive,arcSix,arcSeven,arcEight,arcNine };
             _numbers = new List<Label> { lblZero, lblOne, lblTwo, lblThree, lblFour, lblFive, lblSix, lblSeven, lblEight, lblNine };
 
@@ -35,6 +36,7 @@ namespace ArcNumber
 
             AsyncUpdateNumbersBackground();
         }
+
 
         private async void AsyncUpdateNumbersBackground()
         {
@@ -49,7 +51,6 @@ namespace ArcNumber
                 }
                  txtNumbers.Text = newNumbers;
 
-                // don't run again for at least 200 milliseconds
                 await Task.Delay(1000);
             }
         }
@@ -75,11 +76,8 @@ namespace ArcNumber
         public void IncreaseArc()
         {
             ArcOff(_arcNum);
-
-            _arcNum = (_arcNum + 1 > 9) ? 0 : _arcNum + 1;
-     
-
-       ArcOn(_arcNum);
+            _arcNum = (_arcNum + 1 > 9) ? 0 : _arcNum + 1; 
+            ArcOn(_arcNum);
             
         }
     }
