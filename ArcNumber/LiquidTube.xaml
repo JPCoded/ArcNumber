@@ -18,20 +18,19 @@
                 </LinearGradientBrush>
             </Path.Fill>
         </Path>
-
-        <Rectangle x:Name="recLiquid" HorizontalAlignment="Left" Height="195.464" Margin="10,47.597,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="68.208">
-            <Rectangle.Fill>
+        <Path x:Name="recLiquid" HorizontalAlignment="Left" StrokeThickness="0" VerticalAlignment="Top" Width="68.208" Data="M34.104,0 C52.350521,0 67.250214,3.6407757 68.163628,8.2191008 L68.203422,8.6189994 68.208,8.6189994 68.208,8.6650006 68.208,203.91501 68.208,204.083 68.191276,204.083 68.16362,204.3609 C67.250214,208.93922 52.350521,212.58 34.104,212.58 15.857477,212.58 0.95778653,208.93922 0.044376152,204.3609 L0.016719062,204.083 0,204.083 0,203.91501 0,8.6650006 0,8.6189994 0.0045780592,8.6189994 0.044376152,8.2191008 C0.95778761,3.6407757 15.857478,0 34.104,0 z" Height="212.58" Margin="10,38.978,0,0" Stretch="Fill">
+            <Path.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="1"/>
                     <GradientStop Color="Lime" Offset="1"/>
                 </LinearGradientBrush>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Rectangle x:Name="recGlass" HorizontalAlignment="Left" Height="195.464" Margin="10,47.597,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="68.208" Opacity="0.6">
-            <Rectangle.Fill>
+            </Path.Fill>
+        </Path>
+        <Path HorizontalAlignment="Left" StrokeThickness="0" VerticalAlignment="Top" Width="68.208" Data="M34.104,0 C52.350521,0 67.250214,3.6407757 68.163628,8.2191008 L68.203422,8.6189994 68.208,8.6189994 68.208,8.6650006 68.208,203.91499 68.208,204.083 68.191276,204.083 68.16362,204.3609 C67.250214,208.93922 52.350521,212.58 34.104,212.58 15.857477,212.58 0.95778617,208.93922 0.044376152,204.3609 L0.016719062,204.083 0,204.083 0,203.91499 0,8.6650006 0,8.6189994 0.0045780592,8.6189994 0.044376152,8.2191008 C0.95778761,3.6407757 15.857478,0 34.104,0 z" Height="212.58" Margin="10,38.978,0,0" Stretch="Fill" Opacity="0.5">
+            <Path.Fill>
                 <ImageBrush ImageSource="glassTube.png"/>
-            </Rectangle.Fill>
-        </Rectangle>
+            </Path.Fill>
+        </Path>
 
     </Grid>
 

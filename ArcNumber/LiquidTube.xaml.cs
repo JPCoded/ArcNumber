@@ -46,7 +46,8 @@ namespace ArcNumber
                 LiquidBrush.GradientStops.Add(Lime);
 
                 recLiquid.Fill = LiquidBrush;
-                if(White.Offset <= 0)
+
+                if (White.Offset <= 0)
                 { White.Offset = 1;
                     Lime.Offset = 1;
                 }
@@ -54,4 +55,5 @@ namespace ArcNumber
             }
         }
     }
+    
 }
