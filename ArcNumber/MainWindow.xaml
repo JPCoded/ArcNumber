@@ -8,7 +8,10 @@
         Title="MainWindow" Height="627" Width="775.5">
     <Grid Background="Black" Margin="0,0,-179,-31" Width="770" Height="600" HorizontalAlignment="Left" VerticalAlignment="Top">
         <local:ArcControl x:Name="acSegment" HorizontalAlignment="Left" Height="600" VerticalAlignment="Center" Width="600" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Button x:Name="btnIncrease" Content="Button" HorizontalAlignment="Left" Height="39" Margin="587,82.5,0,0" VerticalAlignment="Top" Width="145.5" Click="btnIncrease_Click"/>
-        <local:LiquidTube HorizontalAlignment="Left" Height="285" Margin="600,153,0,0" VerticalAlignment="Top" Width="93" HorizontalContentAlignment="Left" VerticalContentAlignment="Top"/>
+        <Button x:Name="btnIncrease" Content="Increment" HorizontalAlignment="Left" Height="39" Margin="583,476.5,0,0" VerticalAlignment="Top" Width="145.5" Click="btnIncrease_Click"/>
+        <local:LiquidTube HorizontalAlignment="Left" Height="285" Margin="605,151.5,0,0" VerticalAlignment="Top" Width="93" HorizontalContentAlignment="Left" VerticalContentAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="151" Margin="648.25,10,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="8" Fill="#FFEEEEEE"/>
+        <Rectangle Fill="#FFEEEEEE" HorizontalAlignment="Left" Height="8" Margin="320,10,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="336.25"/>
+        <Rectangle Fill="#FFEEEEEE" HorizontalAlignment="Left" Height="15" Margin="320,10,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="8"/>
     </Grid>
 </Window>

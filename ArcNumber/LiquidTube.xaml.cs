@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using System.Windows.Controls;
-using System.Windows.Media;
+
 
 namespace ArcNumber
 {
@@ -9,7 +9,7 @@ namespace ArcNumber
     /// </summary>
     public partial class LiquidTube : UserControl
     {
-        private const int Heightinc = 10;
+        private const double Heightinc = 1;
         public LiquidTube()
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace ArcNumber
                     recLiquid.Height += Heightinc;
                 }
 
-                await Task.Delay(500);
+                await Task.Delay(100);
             }
         }
     }
