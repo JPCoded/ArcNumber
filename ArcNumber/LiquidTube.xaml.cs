@@ -9,6 +9,7 @@ namespace ArcNumber
     /// </summary>
     public partial class LiquidTube : UserControl
     {
+        private const int Heightinc = 10;
         public LiquidTube()
         {
             InitializeComponent();
@@ -21,18 +22,19 @@ namespace ArcNumber
       
 
             while (true)
-            {   if(recLiquid.Height == 212.58)
+            {   if(recLiquid.Height >= 212)
                 {
                     recLiquid.Height = 0;
                 }
 
-                if ((recLiquid.Height + 10) > 212)
+
+                if ((recLiquid.Height + Heightinc) > 212)
                 {
                     recLiquid.Height = 212.58;
                 }
                 else
                 {
-                    recLiquid.Height += 10;
+                    recLiquid.Height += Heightinc;
                 }
 
                 await Task.Delay(500);
