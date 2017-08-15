@@ -138,5 +138,8 @@
   <ItemGroup>
     <Resource Include="glassTube.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Liquid.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

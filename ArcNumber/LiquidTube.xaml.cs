@@ -17,41 +17,25 @@ namespace ArcNumber
 
         private async void AsyncUpdateLiquid()
         {
-     
-            var LiquidBrush = new LinearGradientBrush()
-            {
-                StartPoint = new System.Windows.Point(0.5, 0),
-                EndPoint = new System.Windows.Point(0.5, 1)
-            };
 
-            var Lime = new GradientStop()
-            {
-                Color = Colors.Lime,
-                Offset = 1
-            };
-         
-            var White = new GradientStop()
-            {
-                Color = Colors.White,
-                Offset = 1
-            };
       
 
             while (true)
-            {
-                White.Offset -= .10;
-                Lime.Offset -= .10;
-                LiquidBrush.GradientStops.Clear();
-                LiquidBrush.GradientStops.Add(White);
-                LiquidBrush.GradientStops.Add(Lime);
-
-                recLiquid.Fill = LiquidBrush;
-
-                if (White.Offset <= 0)
-                { White.Offset = 1;
-                    Lime.Offset = 1;
+            {   if(recLiquid.Height == 212.58)
+                {
+                    recLiquid.Height = 0;
                 }
-                await Task.Delay(1000);
+
+                if ((recLiquid.Height + 10) > 212)
+                {
+                    recLiquid.Height = 212.58;
+                }
+                else
+                {
+                    recLiquid.Height += 10;
+                }
+
+                await Task.Delay(500);
             }
         }
     }
