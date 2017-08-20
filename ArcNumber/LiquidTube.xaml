@@ -5,9 +5,38 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ArcNumber"
              mc:Ignorable="d" Height="304.513" Width="89.786">
-    <Grid>
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
 
-        <Path x:Name="recBackTube" HorizontalAlignment="Left" Margin="-0.231,7.155,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="88.67" Data="M65.000001,0 C98.654847,0 126.33576,7.1502838 129.66441,16.313124 L129.68598,16.380997 130,16.380997 130,18.171 130,264.552 130,266.38101 129.67227,266.38101 129.66441,266.40988 C126.33576,275.57269 98.654847,282.72299 65.000001,282.72299 31.345149,282.72299 3.6642382,275.57269 0.33558706,266.40988 L0.32773507,266.38101 0,266.38101 0,264.552 0,18.171 0,16.380997 0.3140254,16.380997 0.33558706,16.313124 C3.6642382,7.1502838 31.345149,0 65.000001,0 z" Height="276.31" Stretch="Fill">
+        <Border x:Name="brdLiquid" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="212.58" Width="68.997" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <Border.Style>
+                <Style TargetType="{x:Type Border}">
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <RectAnimation Storyboard.TargetProperty="Background.(TileBrush.Viewport)"
+                                    To="0,0,1,1" RepeatBehavior="Forever" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Border.Style>
+            <Border.Background>
+                <ImageBrush
+                ImageSource="Liquid.png"
+                Viewport="0,1,1,1" TileMode="Tile" Stretch="UniformToFill" />
+            </Border.Background>
+        </Border>
+        <Path x:Name="recBackTube" HorizontalAlignment="Left" Margin="-0.231,7.155,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="88.67" Height="276.31" Data="M44.335,31.823002 C26.088479,31.823 11.188789,35.463776 10.275378,40.042099 L10.235579,40.441998 10.231,40.441998 10.231,40.487995 10.231,235.73799 10.231,235.90601 10.247721,235.90601 10.275378,236.1839 C11.188788,240.76222 26.088478,244.403 44.335,244.403 62.581521,244.403 77.481218,240.76222 78.394624,236.1839 L78.422281,235.90601 78.439004,235.90601 78.439004,235.73799 78.439004,40.487995 78.439004,40.441998 78.434427,40.441998 78.394632,40.042099 C77.481218,35.463776 62.581521,31.823 44.335,31.823002 z M44.335,0 C67.290193,0 86.170709,6.9880943 88.44111,15.943093 L88.455812,16.009428 88.67,16.009428 88.67,17.758827 88.67,258.55118 88.67,260.33871 88.446466,260.33871 88.44111,260.36691 C86.170709,269.3219 67.290193,276.31 44.335,276.31 21.379804,276.31 2.4992937,269.3219 0.22889939,260.36691 L0.22354273,260.33871 0,260.33871 0,258.55118 0,17.758827 0,16.009428 0.21419226,16.009428 0.22889939,15.943093 C2.4992937,6.9880943 21.379804,0 44.335,0 z" Stretch="Fill">
             <Path.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FF818181" Offset="1"/>
@@ -18,20 +47,7 @@
                 </LinearGradientBrush>
             </Path.Fill>
         </Path>
-        <Path x:Name="recLiquid" HorizontalAlignment="Left" StrokeThickness="0" VerticalAlignment="Top" Width="68.208" Data="M34.104,0 C52.350521,0 67.250214,3.6407757 68.163628,8.2191008 L68.203422,8.6189994 68.208,8.6189994 68.208,8.6650006 68.208,203.91501 68.208,204.083 68.191276,204.083 68.16362,204.3609 C67.250214,208.93922 52.350521,212.58 34.104,212.58 15.857477,212.58 0.95778653,208.93922 0.044376152,204.3609 L0.016719062,204.083 0,204.083 0,203.91501 0,8.6650006 0,8.6189994 0.0045780592,8.6189994 0.044376152,8.2191008 C0.95778761,3.6407757 15.857478,0 34.104,0 z" Height="212.58" Margin="10,38.978,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            <Path.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="180"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Path.RenderTransform>
-            <Path.Fill>
-                <ImageBrush ImageSource="Liquid.png"/>
-            </Path.Fill>
-        </Path>
-        <Path HorizontalAlignment="Left" StrokeThickness="0" VerticalAlignment="Top" Width="68.208" Data="M34.104,0 C52.350521,0 67.250214,3.6407757 68.163628,8.2191008 L68.203422,8.6189994 68.208,8.6189994 68.208,8.6650006 68.208,203.91499 68.208,204.083 68.191276,204.083 68.16362,204.3609 C67.250214,208.93922 52.350521,212.58 34.104,212.58 15.857477,212.58 0.95778617,208.93922 0.044376152,204.3609 L0.016719062,204.083 0,204.083 0,203.91499 0,8.6650006 0,8.6189994 0.0045780592,8.6189994 0.044376152,8.2191008 C0.95778761,3.6407757 15.857478,0 34.104,0 z" Height="212.58" Margin="10,38.978,0,0" Stretch="Fill" Opacity="0.5">
+        <Path x:Name="recGlass" HorizontalAlignment="Left" StrokeThickness="0" VerticalAlignment="Top" Width="68.997" Data="M34.104,0 C52.350521,0 67.250214,3.6407757 68.163628,8.2191008 L68.203422,8.6189994 68.208,8.6189994 68.208,8.6650006 68.208,203.91499 68.208,204.083 68.191276,204.083 68.16362,204.3609 C67.250214,208.93922 52.350521,212.58 34.104,212.58 15.857477,212.58 0.95778617,208.93922 0.044376152,204.3609 L0.016719062,204.083 0,204.083 0,203.91499 0,8.6650006 0,8.6189994 0.0045780592,8.6189994 0.044376152,8.2191008 C0.95778761,3.6407757 15.857478,0 34.104,0 z" Height="212.58" Margin="10,38.978,0,0" Stretch="Fill" Opacity="0.5">
             <Path.Fill>
                 <ImageBrush ImageSource="glassTube.png"/>
             </Path.Fill>
